@@ -1,0 +1,7 @@
+<Window x:Class="Lab1_3_Planets.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="ЛР1.3 Планеты" Height="330" Width="650">
+    <Grid Margin="16">
+        <Grid.ColumnDefinitions><ColumnDefinition Width="170"/><ColumnDefinition Width="*"/></Grid.ColumnDefinitions>
+        <ListBox x:Name="PlanetsList" SelectionChanged="PlanetsList_SelectionChanged"/>
+        <TextBlock x:Name="InfoText" Grid.Column="1" Margin="16,0,0,0" TextWrapping="Wrap" FontSize="15"/>
+    </Grid>
+</Window>

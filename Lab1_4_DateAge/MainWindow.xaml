@@ -1,0 +1,12 @@
+<Window x:Class="Lab1_4_DateAge.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="ЛР1.4 Расчет даты" Height="240" Width="460">
+    <Grid Margin="16">
+        <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="Auto"/><RowDefinition Height="*"/></Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox x:Name="YearBox" Width="120" Margin="4" SelectionChanged="YearMonth_Changed"/>
+            <ComboBox x:Name="MonthBox" Width="120" Margin="4" SelectionChanged="YearMonth_Changed"/>
+            <ComboBox x:Name="DayBox" Width="120" Margin="4" IsEnabled="False" SelectionChanged="DayBox_Changed"/>
+        </StackPanel>
+        <TextBlock Grid.Row="1" Text="Выберите год, месяц и день." Margin="4,12"/>
+        <TextBlock x:Name="ResultText" Grid.Row="2" Margin="4" TextWrapping="Wrap" FontSize="15"/>
+    </Grid>
+</Window>
